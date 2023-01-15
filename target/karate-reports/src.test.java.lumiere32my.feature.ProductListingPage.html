@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.lumiere32my.feature.ProductListingPage</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-10-14 10:14:42 am</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Products are displayed in Product Details Page</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/lumiere32my/feature/ProductListingPage.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Api of Product Listing Page</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Products are displayed in Product Details Page</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4878</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:14:37.393 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;web/getProductDetailById/259&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4870</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">10:14:39.385 request:
+1 &gt; GET https://www.lumiere32.my/testapi/v1/web/getProductDetailById/259
+1 &gt; Host: www.lumiere32.my
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:14:42.104 response time in milliseconds: 2545
+1 &lt; 200
+1 &lt; Date: Fri, 14 Oct 2022 04:44:41 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; ETag: W/&quot;321a-xka58OScxk1w6OEQgCUa2T9NmAE&quot;
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=V83movrx%2BNrQzjy1D7dwQnJvwXnvajjRRjbo9HGbwQISnld3YGDx42n0VwWC44A9P5ib%2FXqM3PvpWC1qdvlTj5Vq4bAaTR37KBF4IUTicnfPzZ%2BCihyqqOwFGj%2BYpl8z%2BDR7&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 759da9481b4f6ece-BOM
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;success&quot;:true,&quot;data&quot;:{&quot;id&quot;:259,&quot;productName&quot;:&quot;Comfort Plus Plastic Cups-White, 7 Oz (50pcs/pkt, 40pkt/carton)&quot;,&quot;code&quot;:&quot;PC-7W&quot;,&quot;PNCDE&quot;:&quot;PC-7W&quot;,&quot;countryId&quot;:1,&quot;countryOriginId&quot;:null,&quot;languageId&quot;:1,&quot;manufactureId&quot;:6,&quot;supplyTypeId&quot;:1,&quot;categoryId&quot;:20,&quot;sellerId&quot;:12,&quot;UOM&quot;:&quot;&quot;,&quot;shortDesciption&quot;:&quot;7oz. Plastic Cup White (2000pcs) &quot;,&quot;warranty&quot;:&quot;&lt;p&gt;Standard warranty covered by the seller against any manufacturing defect. In such events, please report to us within 7 days from the date of delivery at connect@lumiere32.my&lt;/p&gt;&quot;,&quot;features&quot;:&quot;&lt;p&gt;- 7oz. Plastic Cup&amp;nbsp;&lt;/p&gt;\r\n\r\n&lt;p&gt;- White&amp;nbsp;&lt;/p&gt;\r\n\r\n&lt;p&gt;- 2000pcs/carton&lt;/p&gt;\r\n\r\n&lt;p&gt;- (50pcs/1pkt 40pkt/1ctn)&lt;/p&gt;\r\n&quot;,&quot;video&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;7oz. Plastic Cup White (2000pcs) &quot;,&quot;metaKeyword&quot;:&quot;7oz. Plastic Cup White (2000pcs) &quot;,&quot;metaTitle&quot;:&quot;7oz. Plastic Cup White (2000pcs) &quot;,&quot;catelogue&quot;:null,&quot;ribbenText&quot;:&quot;&quot;,&quot;packageContent&quot;:null,&quot;isSale&quot;:false,&quot;isQuote&quot;:false,&quot;isPackage&quot;:false,&quot;MRP&quot;:&quot;123.56&quot;,&quot;sellPrice&quot;:&quot;150.00&quot;,&quot;walletPrice&quot;:&quot;0.00&quot;,&quot;speciality&quot;:&quot;null&quot;,&quot;currency&quot;:null,&quot;description&quot;:&quot;&lt;ul&gt;\r\n\t&lt;li&gt;1000 x White Disposable PLASTIC CUPS GLASSES 7oz (190ml)&lt;/li&gt;\r\n\t&lt;li&gt;Size - 7oz (190ml)&lt;/li&gt;\r\n\t&lt;li&gt;Colour - White&lt;/li&gt;\r\n\t&lt;li&gt;Disposable white plastic cup, a great quality suitable for cold drinks up to 65 degrees. Supplied in the standard rim size of 70.3, so will fit most of water coolers. Ideal for everyday use, or a one off requirement for parties.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n\r\n&lt;table style=width:366px&gt;\r\n\t&lt;tbody&gt;\r\n\t\t&lt;tr&gt;\r\n\t\t\t&lt;td style=vertical-align:top; width:96px&gt;Material&lt;/td&gt;\r\n\t\t\t&lt;td style=vertical-align:top; width:270px&gt;Plastic&lt;/td&gt;\r\n\t\t&lt;/tr&gt;\r\n\t\t&lt;tr&gt;\r\n\t\t\t&lt;td style=vertical-align:top; width:96px&gt;Colour&lt;/td&gt;\r\n\t\t\t&lt;td style=vertical-align:top; width:270px&gt;1&lt;/td&gt;\r\n\t\t&lt;/tr&gt;\r\n\t\t&lt;tr&gt;\r\n\t\t\t&lt;td style=vertical-align:top; width:96px&gt;Capacity&lt;/td&gt;\r\n\t\t\t&lt;td style=vertical-align:top; width:270px&gt;7 Fluid Ounces&lt;/td&gt;\r\n\t\t&lt;/tr&gt;\r\n\t&lt;/tbody&gt;\r\n&lt;/table&gt;\r\n\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n&quot;,&quot;noDiscount&quot;:false,&quot;isQuantityDiscount&quot;:true,&quot;parentId&quot;:null,&quot;deliveryTime&quot;:null,&quot;discount&quot;:18,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2021-03-22T05:15:00.000Z&quot;,&quot;updated_at&quot;:&quot;2022-09-14T11:08:54.000Z&quot;,&quot;sellerUploadProductId&quot;:null,&quot;weight&quot;:&quot;0.00&quot;,&quot;length&quot;:&quot;0.00&quot;,&quot;breadth&quot;:&quot;0.00&quot;,&quot;height&quot;:&quot;0.00&quot;,&quot;dim_weight&quot;:&quot;0.00&quot;,&quot;billable_weight&quot;:&quot;3.12&quot;,&quot;mdaNumber&quot;:&quot;0&quot;,&quot;mdaURL&quot;:null,&quot;disableCashback&quot;:0,&quot;expDate&quot;:&quot;2022-08-01T00:00:00.000Z&quot;,&quot;mfgDate&quot;:&quot;2022-08-30T00:00:00.000Z&quot;,&quot;lotNumber&quot;:&quot;64645re4466&quot;,&quot;dcaCertificateNumber&quot;:&quot;teetrte56556&quot;,&quot;npraUrl&quot;:&quot;https://www.google.com/&quot;,&quot;productImage&quot;:[{&quot;id&quot;:248,&quot;productId&quot;:259,&quot;image&quot;:&quot;https://lumier32.s3.ap-southeast-1.amazonaws.com/product/a619c97e85b07411a134bd8c68ba428c.jpg&quot;,&quot;sort&quot;:null,&quot;isDefault&quot;:true,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2020-03-22T05:21:00.000Z&quot;,&quot;updated_at&quot;:&quot;2020-03-22T05:21:00.000Z&quot;}],&quot;productVariants&quot;:[],&quot;countryOrigin&quot;:null,&quot;sellerDetail&quot;:{&quot;id&quot;:12,&quot;sellerName&quot;:&quot;Seller 12&quot;,&quot;showCustomerData&quot;:false},&quot;sellerProducts&quot;:[{&quot;id&quot;:259,&quot;productName&quot;:&quot;Comfort Plus Plastic Cups-White, 7 Oz (50pcs/pkt, 40pkt/carton)&quot;,&quot;countryId&quot;:1,&quot;languageId&quot;:1,&quot;sellerId&quot;:12,&quot;billingAddress&quot;:null,&quot;quantity&quot;:88,&quot;deliveryTime&quot;:7,&quot;sellerFee&quot;:&quot;6.00&quot;,&quot;price&quot;:&quot;122.80&quot;,&quot;productId&quot;:259,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2021-03-22T05:15:52.000Z&quot;,&quot;updated_at&quot;:&quot;2022-10-10T11:34:45.000Z&quot;}],&quot;language&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;English&quot;,&quot;languageType&quot;:&quot;Regional&quot;},&quot;category&quot;:{&quot;id&quot;:20,&quot;categoryName&quot;:&quot;Patient Care&quot;},&quot;quantityDiscounts&quot;:[{&quot;id&quot;:244,&quot;productId&quot;:259,&quot;minQuantity&quot;:2,&quot;maxQuantity&quot;:5,&quot;price&quot;:&quot;10.00&quot;,&quot;walletPrice&quot;:&quot;0.00&quot;,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2022-07-27T18:34:08.582Z&quot;,&quot;updated_at&quot;:&quot;2022-09-14T11:08:54.000Z&quot;}],&quot;cartDetail&quot;:{&quot;id&quot;:8247,&quot;customerId&quot;:1360,&quot;productId&quot;:259,&quot;productVariantId&quot;:null,&quot;quantity&quot;:1,&quot;countryId&quot;:1,&quot;sellerId&quot;:12,&quot;created_at&quot;:&quot;2022-08-19T09:28:04.970Z&quot;,&quot;updated_at&quot;:&quot;2022-08-19T09:28:04.970Z&quot;,&quot;isQuantityDiscount&quot;:false},&quot;productsRelated&quot;:[],&quot;country&quot;:{&quot;id&quot;:1,&quot;countryName&quot;:&quot;Malaysia&quot;,&quot;financialYearFrom&quot;:null,&quot;financialYearTo&quot;:null,&quot;languages&quot;:[{&quot;id&quot;:1,&quot;itemName&quot;:&quot;English&quot;,&quot;languageType&quot;:&quot;Regional&quot;}],&quot;currency&quot;:[{&quot;id&quot;:1,&quot;itemName&quot;:&quot;Malaysian Ringgit - MYR&quot;}],&quot;currencyId&quot;:1,&quot;countryId&quot;:1,&quot;alphaCode&quot;:&quot;my&quot;,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2021-03-16T05:19:54.942Z&quot;,&quot;updated_at&quot;:&quot;2021-03-16T05:19:54.942Z&quot;,&quot;company&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;LUMIERE32 SDN. BHD.&quot;,&quot;email&quot;:&quot;sales@lumiere32.my&quot;,&quot;phone&quot;:&quot;+60 3-2935 9912&quot;,&quot;contactMobileNo&quot;:&quot;+65 6592 2415&quot;,&quot;workAddress&quot;:&quot;FOUND8, KL SENTRAL, 5 JALAN STESEN SENTRAL, EAST WING LEVEL 3, KUALA LUMPUR SENTRAL, 50470 KUALA LUMPUR, W.P. KUALA LUMPUR&quot;,&quot;officeAddress&quot;:&quot;LUMIERE32 SDN. BHD. (Reg. No. 1400582-D), Level 23, NU Tower 2, Suite 2333, Jalan Tun Sambanthan, Kuala Lumpur Sentral, Kuala Lumpur - 50470| Wholesale License and Medical Device Authority Establishment License No : MDA-2583-WDP121 | Kementerian Kewangan Malaysia, Bahagian Perolehan Kerajaan, No Rujukan Pendaftaran : 357-0002340604 SSM No: 202101000284 (1400582-D)&quot;,&quot;gstNo&quot;:&quot;0&quot;,&quot;logo&quot;:null,&quot;added_by&quot;:1,&quot;status&quot;:1,&quot;isDelete&quot;:0,&quot;officeType&quot;:2,&quot;countryId&quot;:1,&quot;created_at&quot;:&quot;2021-03-11T07:05:23.000Z&quot;,&quot;updated_at&quot;:&quot;2021-03-11T07:05:23.000Z&quot;}],&quot;countryCurrency&quot;:{&quot;id&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit&quot;,&quot;currencyCode&quot;:&quot;MYR&quot;,&quot;symbol&quot;:&quot;RM&quot;},&quot;tax&quot;:[{&quot;id&quot;:9,&quot;taxCode&quot;:&quot;GST&quot;,&quot;taxRate&quot;:&quot;0.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-10-26T06:55:19.127Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:1,&quot;taxCode&quot;:&quot;SST&quot;,&quot;taxRate&quot;:&quot;0.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-03-22T15:25:46.000Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:16,&quot;taxCode&quot;:&quot;sstt&quot;,&quot;taxRate&quot;:&quot;8.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:0,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-17T02:37:55.202Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:15,&quot;taxCode&quot;:&quot;sst2&quot;,&quot;taxRate&quot;:&quot;5.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-17T02:37:38.908Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:12,&quot;taxCode&quot;:&quot;def&quot;,&quot;taxRate&quot;:&quot;5.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-12T09:36:32.049Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:17,&quot;taxCode&quot;:&quot;Ssf&quot;,&quot;taxRate&quot;:&quot;10.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-17T07:43:16.875Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:2,&quot;taxCode&quot;:&quot;GST&quot;,&quot;taxRate&quot;:&quot;6.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-05-16T22:54:04.154Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:10,&quot;taxCode&quot;:&quot;GST &quot;,&quot;taxRate&quot;:&quot;7.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-12T06:59:11.550Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:11,&quot;taxCode&quot;:&quot;GGst&quot;,&quot;taxRate&quot;:&quot;123.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-12T08:25:41.356Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:18,&quot;taxCode&quot;:&quot;SST&quot;,&quot;taxRate&quot;:&quot;0.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-17T09:13:13.202Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:20,&quot;taxCode&quot;:&quot;hmhg&quot;,&quot;taxRate&quot;:&quot;6.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-18T08:39:22.895Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:21,&quot;taxCode&quot;:&quot;SST&quot;,&quot;taxRate&quot;:&quot;123.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-12-15T06:02:09.306Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:19,&quot;taxCode&quot;:&quot;SST&quot;,&quot;taxRate&quot;:&quot;20.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2021-11-18T08:39:04.820Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:45.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:14,&quot;taxCode&quot;:&quot;GST&quot;,&quot;taxRate&quot;:&quot;0.00&quot;,&quot;calculationOnBasic&quot;:&quot;No&quot;,&quot;countryId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2021-11-12T18:41:11.250Z&quot;,&quot;updated_at&quot;:&quot;2022-09-06T09:05:46.000Z&quot;,&quot;isDefault&quot;:1}],&quot;deliveryCharge&quot;:[{&quot;id&quot;:3,&quot;title&quot;:&quot;Testing Delivery Charge&quot;,&quot;noOfdays&quot;:&quot;1&quot;,&quot;minimumOrderAmount&quot;:&quot;120.00&quot;,&quot;deliveryCharge&quot;:&quot;11.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:&quot;Just For Testing Purposes&quot;,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-05-24T06:41:08.611Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:1,&quot;title&quot;:&quot;Standard Delivery&quot;,&quot;noOfdays&quot;:&quot;1&quot;,&quot;minimumOrderAmount&quot;:&quot;150.00&quot;,&quot;deliveryCharge&quot;:&quot;9.50&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:null,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-03-09T22:55:19.000Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:10,&quot;title&quot;:&quot;test-3&quot;,&quot;noOfdays&quot;:&quot;1&quot;,&quot;minimumOrderAmount&quot;:&quot;1.00&quot;,&quot;deliveryCharge&quot;:&quot;12.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:null,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-09-27T09:49:25.285Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:9,&quot;title&quot;:&quot;test-2&quot;,&quot;noOfdays&quot;:&quot;12&quot;,&quot;minimumOrderAmount&quot;:&quot;12.00&quot;,&quot;deliveryCharge&quot;:&quot;12.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:null,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-09-27T09:48:14.828Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:8,&quot;title&quot;:&quot;test&quot;,&quot;noOfdays&quot;:&quot;1&quot;,&quot;minimumOrderAmount&quot;:&quot;1.00&quot;,&quot;deliveryCharge&quot;:&quot;12.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:&quot;abc1&quot;,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-09-27T09:18:08.551Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:6,&quot;title&quot;:&quot;ONe Day Delivery&quot;,&quot;noOfdays&quot;:&quot;1&quot;,&quot;minimumOrderAmount&quot;:&quot;0.00&quot;,&quot;deliveryCharge&quot;:&quot;20.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:&quot;one day delivery&quot;,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:0,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-07-21T11:24:14.026Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:13,&quot;title&quot;:&quot;test-1&quot;,&quot;noOfdays&quot;:&quot;12&quot;,&quot;minimumOrderAmount&quot;:&quot;12.00&quot;,&quot;deliveryCharge&quot;:&quot;123.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:null,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-09-28T04:28:16.577Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:15,&quot;title&quot;:&quot;yjhhggj&quot;,&quot;noOfdays&quot;:&quot;7&quot;,&quot;minimumOrderAmount&quot;:&quot;0.00&quot;,&quot;deliveryCharge&quot;:&quot;90.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:null,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-17T05:22:05.495Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:4,&quot;title&quot;:&quot;Same Day Delivery&quot;,&quot;noOfdays&quot;:&quot;2&quot;,&quot;minimumOrderAmount&quot;:&quot;200.00&quot;,&quot;deliveryCharge&quot;:&quot;20.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:&quot;Testing instructions&quot;,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:0,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2021-06-02T12:24:44.159Z&quot;,&quot;updated_at&quot;:&quot;2022-03-21T09:47:20.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:17,&quot;title&quot;:&quot;Standard Delivery&quot;,&quot;noOfdays&quot;:&quot;1&quot;,&quot;minimumOrderAmount&quot;:&quot;0.00&quot;,&quot;deliveryCharge&quot;:&quot;0.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:null,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:0,&quot;created_at&quot;:&quot;2021-12-07T05:30:25.589Z&quot;,&quot;updated_at&quot;:&quot;2022-03-24T09:04:53.000Z&quot;,&quot;isDefault&quot;:1},{&quot;id&quot;:7,&quot;title&quot;:&quot;Standard Delivery&quot;,&quot;noOfdays&quot;:&quot;3&quot;,&quot;minimumOrderAmount&quot;:&quot;1.00&quot;,&quot;deliveryCharge&quot;:&quot;9.50&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:&quot;1abc1&quot;,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-07-21T23:17:51.586Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:11,&quot;title&quot;:&quot;default&quot;,&quot;noOfdays&quot;:&quot;11&quot;,&quot;minimumOrderAmount&quot;:&quot;11.00&quot;,&quot;deliveryCharge&quot;:&quot;120.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:&quot;default&quot;,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-09-27T11:07:05.848Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:12,&quot;title&quot;:&quot;test&quot;,&quot;noOfdays&quot;:&quot;11&quot;,&quot;minimumOrderAmount&quot;:&quot;11.00&quot;,&quot;deliveryCharge&quot;:&quot;111.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:&quot;test&quot;,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-09-27T11:17:50.437Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0},{&quot;id&quot;:16,&quot;title&quot;:&quot;New Delivery&quot;,&quot;noOfdays&quot;:&quot;7&quot;,&quot;minimumOrderAmount&quot;:&quot;100.00&quot;,&quot;deliveryCharge&quot;:&quot;15.00&quot;,&quot;countryId&quot;:1,&quot;currency&quot;:&quot;Malaysian Ringgit - MYR&quot;,&quot;instructions&quot;:null,&quot;currencyId&quot;:1,&quot;adminStatus&quot;:1,&quot;isDelete&quot;:1,&quot;created_at&quot;:&quot;2021-11-17T07:52:59.037Z&quot;,&quot;updated_at&quot;:&quot;2022-03-11T05:19:41.000Z&quot;,&quot;isDefault&quot;:0}]},&quot;manufactureDetail&quot;:{&quot;id&quot;:6,&quot;manufacturerName&quot;:&quot;Other Brands&quot;},&quot;mainProductQtyDiscountLabels&quot;:[{&quot;maxQuantity&quot;:5,&quot;minQuantity&quot;:2,&quot;price&quot;:&quot;10.00&quot;,&quot;productDiscountMRP&quot;:&quot;111.20&quot;,&quot;productSavingAmount&quot;:&quot;12.36&quot;}],&quot;MRPDisplayLabel&quot;:123.56},&quot;message&quot;:&quot;Product detail get successfully.&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

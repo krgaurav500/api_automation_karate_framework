@@ -1,0 +1,93 @@
+17:57:35.358 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.1.0
+17:57:35.736 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:57:37.438 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+17:57:38.424 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://www.lumiere32.my/testapi/v1/customer/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: www.lumiere32.my
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"Email":"gaurav@lumiere32.sg","password":"1234567a"}
+
+17:57:39.996 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 1563
+1 < 201
+1 < Date: Mon, 11 Apr 2022 12:27:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1010
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Vary: Origin
+1 < Access-Control-Allow-Credentials: true
+1 < AuthToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIyMiwidHlwZSI6InVzZXIiLCJpYXQiOjE2NDk2Nzk5NDksImV4cCI6MTY2NTIzMTk0OX0.jgIx1h7Z72hd3H2oixPlmq7os2nxRlj7VsBJ5LYKfzs
+1 < Access-Control-Expose-Headers: AuthToken
+1 < ETag: W/"3f2-J8TpiUT54QyZ6u/23iQwhgaTz5U"
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ULtrfVO4OjSfnIg%2FsrX7wxtF5W7MMdIiq82LM%2B013CmZEgHaxkq2CUafkCMKAuKeEqsiy8wX6htByIyOu74GgI0WBupTzS7wchVojP43UzUpSiBHUM5IX%2FMNT7tgPKDpnlxa"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6fa3b7b4de2874bd-LHR
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"success":true,"data":{"customerId":222,"firstName":"Kumar","lastName":"Gaurav","Email":"gaurav@lumiere32.sg","title":"Mr","clinicName":"Billing","countryCode":"+91","mobileNumber":"4444447","teleNumber":"","speciality":"Pediatric Dentistry","otp":"","mobileVerify":0,"emailVerify":1,"signupNewsletter":0,"houseNo":"4A Billing","floorNo":"5nd Billing","unitNo":"6th Billing","streetName":"uoupioiou","buildingName":"72 Billing","website":"","pincode":"68100","disableReminder":false,"practiceType":"Medical","nric":null,"image":null,"jobTitle":"","customerGroupId":2,"countryId":1,"countryRegionId":1,"braintreeCustomerId":null,"shippingMobileNo":"+917908365385","shippingMobileVerify":1,"adminStatus":1,"isDelete":0,"created_at":"2021-08-23T10:39:34.931Z","updated_at":"2022-04-11T09:09:44.000Z","state":"Selangor","stripeCustomerId":"cus_KhBrwf45GIAci0","disableAbandonCart":false,"rewardPlanId":1,"isDisableReward":false,"city":"Batu Caves","customerRegionName":"Malaysia"},"message":"Login successfully."}
+17:57:40.062 [com.intuit.karate.cli.Main.main()] ERROR com.intuit.karate - src/test/java/lumiere32my/feature/Test.feature:14
+And match each response ==
+"""
+{
+    success: "#boolean",
+    data:   {
+                customerId : "#number",
+                firstName : "#string",
+                lastName : "#string",
+                Email : "#string",
+                title : "#string",
+                clinicName : "#string",
+                countryCode : "#string",
+                mobileNumber : "#string",
+                teleNumber : "#string",
+                speciality : "#string",
+                otp : "#string",
+                mobileVerify : "#number",
+                emailVerify : "#number",
+                signupNewsletter : "#number",
+                houseNo : "#string",
+                floorNo : "#string",
+                unitNo : "#string",
+                streetName : "#string",
+                buildingName : "#string",
+                website : "##string",
+                pincode : "#string",
+                disableReminder : "#boolean",
+                practiceType : "#string",
+                nric : null,
+                image : null,
+                jobTitle : "##string",
+                customerGroupId : "#number",
+                countryId : "#number",
+                countryRegionId : "#number",
+                braintreeCustomerId : null,
+                shippingMobileNo : "##string",
+                shippingMobileVerify : "#number",
+                adminStatus : "#number",
+                isDelete : "#number",
+                created_at : "#? timeValidator(_)",
+                updated_at : "#? timeValidator(_)",
+                state : "##string",
+                stripeCustomerId : "##string",
+                disableAbandonCart : "#boolean",
+                rewardPlanId : "#number",
+                isDisableReward : "#boolean",
+                city : "##string",
+                customerRegionName : "##string"
+            },
+    message: "#string"            
+}
+"""
+match failed: EACH_EQUALS
+  $ | actual is not an array or list (MAP:MAP)
+  {"success":true,"data":{"customerId":222,"firstName":"Kumar","lastName":"Gaurav","Email":"gaurav@lumiere32.sg","title":"Mr","clinicName":"Billing","countryCode":"+91","mobileNumber":"4444447","teleNumber":"","speciality":"Pediatric Dentistry","otp":"","mobileVerify":0,"emailVerify":1,"signupNewsletter":0,"houseNo":"4A Billing","floorNo":"5nd Billing","unitNo":"6th Billing","streetName":"uoupioiou","buildingName":"72 Billing","website":"","pincode":"68100","disableReminder":false,"practiceType":"Medical","nric":null,"image":null,"jobTitle":"","customerGroupId":2,"countryId":1,"countryRegionId":1,"braintreeCustomerId":null,"shippingMobileNo":"+917908365385","shippingMobileVerify":1,"adminStatus":1,"isDelete":0,"created_at":"2021-08-23T10:39:34.931Z","updated_at":"2022-04-11T09:09:44.000Z","state":"Selangor","stripeCustomerId":"cus_KhBrwf45GIAci0","disableAbandonCart":false,"rewardPlanId":1,"isDisableReward":false,"city":"Batu Caves","customerRegionName":"Malaysia"},"message":"Login successfully."}
+  {"success":"#boolean","data":{"customerId":"#number","firstName":"#string","lastName":"#string","Email":"#string","title":"#string","clinicName":"#string","countryCode":"#string","mobileNumber":"#string","teleNumber":"#string","speciality":"#string","otp":"#string","mobileVerify":"#number","emailVerify":"#number","signupNewsletter":"#number","houseNo":"#string","floorNo":"#string","unitNo":"#string","streetName":"#string","buildingName":"#string","website":"##string","pincode":"#string","disableReminder":"#boolean","practiceType":"#string","nric":null,"image":null,"jobTitle":"##string","customerGroupId":"#number","countryId":"#number","countryRegionId":"#number","braintreeCustomerId":null,"shippingMobileNo":"##string","shippingMobileVerify":"#number","adminStatus":"#number","isDelete":"#number","created_at":"#? timeValidator(_)","updated_at":"#? timeValidator(_)","state":"##string","stripeCustomerId":"##string","disableAbandonCart":"#boolean","rewardPlanId":"#number","isDisableReward":"#boolean","city":"##string","customerRegionName":"##string"},"message":"#string"}
+
+src/test/java/lumiere32my/feature/Test.feature:14
+17:57:40.857 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/lumiere32my/feature/Test.feature
